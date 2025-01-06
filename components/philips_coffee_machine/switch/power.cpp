@@ -16,7 +16,7 @@ namespace esphome
 
             void Power::loop()
             {
-                /*if (should_power_trip_ && millis() - last_power_trip_ > power_trip_delay_ + POWER_TRIP_RETRY_DELAY)
+                if (should_power_trip_ && millis() - last_power_trip_ > power_trip_delay_ + POWER_TRIP_RETRY_DELAY)
                 {
                     if (power_trip_count_ >= MAX_POWER_TRIP_COUNT)
                     {
@@ -32,7 +32,7 @@ namespace esphome
 
                     last_power_trip_ = millis();
                     power_trip_count_++;
-                }*/
+                }
             }
 
             void Power::write_state(bool state)
