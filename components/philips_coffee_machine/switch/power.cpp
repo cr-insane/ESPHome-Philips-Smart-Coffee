@@ -40,8 +40,8 @@ namespace esphome
                 if (state)
                 {
                     // Send pre-power on message
-                    for (unsigned int i = 0; i <= power_message_repetitions_; i++)
-                        mainboard_uart_->write_array(command_pre_power_on);
+                    #for (unsigned int i = 0; i <= power_message_repetitions_; i++)
+                    #    mainboard_uart_->write_array(command_pre_power_on);
 
                     // Send power on message
                     if (cleaning_)
